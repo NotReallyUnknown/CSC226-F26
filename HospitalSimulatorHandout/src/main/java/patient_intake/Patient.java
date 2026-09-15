@@ -18,43 +18,43 @@ public class Patient extends Person {
 
     // Getters
     public String getPatientID() {
-        return null; // TODO REQUIRED: Return the patient ID.
+        return patientID; // TODO REQUIRED: Return the patient ID.
     }
 
     public String getFirstName() {
-        return null; // TODO REQUIRED: Return the first name.
+        return firstName; // TODO REQUIRED: Return the first name.
     }
 
     public String getLastName() {
-        return null; // TODO REQUIRED: Return the last name.
+        return lastName; // TODO REQUIRED: Return the last name.
     }
 
     public int getAge() {
-        return 0; // TODO REQUIRED: Return the age.
+        return age; // TODO REQUIRED: Return the age.
     }
 
     public String getChiefComplaint() {
-        return null; // TODO REQUIRED: Return the chief complaint.
+        return chiefComplaint; // TODO REQUIRED: Return the chief complaint.
     }
 
     public int getTriageLevel() {
-        return 0; // TODO REQUIRED: Return the triage level.
+        return triageLevel; // TODO REQUIRED: Return the triage level.
     }
 
     public String getCurrentStage() {
-        return null; // TODO REQUIRED: Return the current stage.
+        return currentStage; // TODO REQUIRED: Return the current stage.
     }
 
     public String getAssignedRoom() {
-        return null; // TODO REQUIRED: Return the assigned room.
+        return assignedRoom; // TODO REQUIRED: Return the assigned room.
     }
 
     public int getArrivalHour() {
-        return 0; // TODO REQUIRED: Return the arrival hour.
+        return arrivalHour; // TODO REQUIRED: Return the arrival hour.
     }
 
     public String getInsuranceID() {
-        return null; // TODO REQUIRED: Return the insurance ID.
+        return insuranceID; // TODO REQUIRED: Return the insurance ID.
     }
 
     // Setters
@@ -71,8 +71,14 @@ public class Patient extends Person {
     }
 
     public void setAge(int age) {
+        if (age > 120 || age < 0) {
+            system.out.println("Invalid Age, Try Again!");
         // TODO REQUIRED: Update the age.
         // OPTIONAL (+5%): Reject ages outside the range 0 through 120.
+        }
+        else {
+            
+        }
     }
 
     public void setChiefComplaint(String chiefComplaint) {
