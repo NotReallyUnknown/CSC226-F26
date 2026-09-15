@@ -59,14 +59,17 @@ public class Patient extends Person {
 
     // Setters
     public void setPatientID(String patientID) {
+        this.patientID = patientID;
         // TODO REQUIRED: Update the patient ID.
     }
 
     public void setFirstName(String firstName) {
+        this.firstName = firstName;
         // TODO REQUIRED: Update the first name.
     }
 
     public void setLastName(String lastName) {
+        this.lastName = lastName;
         // TODO REQUIRED: Update the last name.
     }
 
@@ -77,36 +80,42 @@ public class Patient extends Person {
         // OPTIONAL (+5%): Reject ages outside the range 0 through 120.
         }
         else {
-            
+            this.age = age;
         }
     }
 
     public void setChiefComplaint(String chiefComplaint) {
+        this.chiefComplaint = chiefComplaint;
         // TODO REQUIRED: Update the chief complaint.
     }
 
     public void setTriageLevel(int triageLevel) {
+        this.triageLevel = triageLevel;
         // TODO REQUIRED: Update the triage level.
     }
 
     public void setCurrentStage(String currentStage) {
+        this.currentStage = currentStage;
         // TODO REQUIRED: Update the current stage.
     }
 
     public void setAssignedRoom(String assignedRoom) {
+        this.assignedRoom = assignedRoom;
         // TODO REQUIRED: Update the assigned room.
     }
 
     public void setArrivalHour(int arrivalHour) {
+        this.arrivalHour = arrivalHour;
         // TODO REQUIRED: Update the arrival hour.
     }
 
     public void setInsuranceID(String insuranceID) {
+        this.insuranceID = insuranceID;
         // TODO REQUIRED: Update the insurance ID.
     }
 
     @Override
     public String toString() {
-        return ""; // TODO REQUIRED: Return a useful representation of a patient.
+        return Patient; // TODO REQUIRED: Return a useful representation of a patient.
     }
 }
