@@ -10,7 +10,7 @@ public class PatientRegistry {
     private static final int INITIAL_CAPACITY = 10;
 
     public PatientRegistry() {
-        patientRegistry = new patient[10];
+        patientRegistry = new patient[INITIAL_CAPACITY];
         size = 0;
         // TODO REQUIRED: Create the initial array and set the starting size.
     }
@@ -35,8 +35,12 @@ public class PatientRegistry {
     }
 
     public Patient getPatientByID(String patientID) {
-        
-        return null; // TODO REQUIRED: Search for and return the matching patient.
+        for (int i = 0; i < size; i++) {
+            if (patientRegistry[i].getPatientID().equals(patientID)) {
+                return patientRegistry[i];
+        }
+        return null;
+         // TODO REQUIRED: Search for and return the matching patient.
     }
 
     /**
@@ -68,7 +72,11 @@ public class PatientRegistry {
     
     @Override
     public String toString() {
-        return ""; // TODO REQUIRED: Return a useful representation of the registry.
+        Patient[] display = new Patient[size];
+        for (int i = 0; i < size; i++) {
+            display[i] = patientRegistry[i];
+        }
+        return display; // TODO REQUIRED: Return a useful representation of the registry.
     }
 
 }
