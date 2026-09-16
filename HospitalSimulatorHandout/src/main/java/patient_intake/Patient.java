@@ -16,6 +16,11 @@ public class Patient extends Person {
         // TODO REQUIRED: Initialize the patient-specific fields.
     }
 
+    public Patient() {
+    
+    }
+    
+
     // Getters
     public String getPatientID() {
         return patientID; // TODO REQUIRED: Return the patient ID.
