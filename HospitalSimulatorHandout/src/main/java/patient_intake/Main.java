@@ -35,11 +35,16 @@ public class Main {
             String lastName = name[2];
             
             // TODO REQUIRED: Create a Patient and add it to patients.
+
+            Patient patient = new Patient (patientID, firstName, lastName, age, chiefComplaint, triageLevel, currentStage, assignedRoom, arrivalHour, insuranceID);
+            patients.addPatient(patient);
             
          }
 
          // TODO REQUIRED: Display the completed registry.
+         System.out.println(patients);
       } catch (FileNotFoundException exception) {
+         System.out.println("File Not Found! Please Enter a File!");
          // TODO REQUIRED: Report a missing input file.
       }
    }
