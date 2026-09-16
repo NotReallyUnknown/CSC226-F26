@@ -75,7 +75,7 @@ public class Patient extends Person {
 
     public void setAge(int age) {
         if (age > 120 || age < 0) {
-            system.out.println("Invalid Age, Try Again!");
+            System.out.println("Invalid Age, Try Again!");
         // TODO REQUIRED: Update the age.
         // OPTIONAL (+5%): Reject ages outside the range 0 through 120.
         }
