@@ -13,13 +13,16 @@ public class Patient extends Person {
                    String chiefComplaint, int triageLevel, String currentStage, 
                    String assignedRoom, int arrivalHour, String insuranceID) {
         super(firstName, lastName, age);
+
+        this.patientID = patientID;
+        this.chiefComplaint = chiefComplaint;
+        this.triageLevel = triageLevel;
+        this.currentStage = currentStage;
+        this.assignedRoom = assignedRoom;
+        this.arrivalHour = arrivalHour;
+        this.insuranceID = insuranceID;
         // TODO REQUIRED: Initialize the patient-specific fields.
     }
-
-    public Patient() {
-    
-    }
-    
 
     // Getters
     public String getPatientID() {
@@ -121,6 +124,6 @@ public class Patient extends Person {
 
     @Override
     public String toString() {
-        return Patient; // TODO REQUIRED: Return a useful representation of a patient.
+        return patientID + "   " + firstName + "   " + lastName + "   " + triageLevel + "   " + chiefComplaint; // TODO REQUIRED: Return a useful representation of a patient.
     }
 }
