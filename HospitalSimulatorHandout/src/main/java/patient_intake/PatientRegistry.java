@@ -16,7 +16,7 @@ public class PatientRegistry {
     }
 
     public void addPatient(Patient patient) {
-        patientRegistry[size] = Patient;
+        patientRegistry[size] = patient;
         size++;
         // TODO REQUIRED: Add a patient to the registry.
         // TODO OPTIONAL (+5%): Expand the array when it becomes full.
