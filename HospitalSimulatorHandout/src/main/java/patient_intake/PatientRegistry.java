@@ -10,10 +10,14 @@ public class PatientRegistry {
     private static final int INITIAL_CAPACITY = 10;
 
     public PatientRegistry() {
+        patientRegistry = new patient[10];
+        size = 0;
         // TODO REQUIRED: Create the initial array and set the starting size.
     }
 
     public void addPatient(Patient patient) {
+        patientRegistry[size] = Patient;
+        size++;
         // TODO REQUIRED: Add a patient to the registry.
         // TODO OPTIONAL (+5%): Expand the array when it becomes full.
     }
@@ -23,10 +27,15 @@ public class PatientRegistry {
      * The optional encapsulation extension requires returning a defensive copy.
      */
     public Patient[] getPatientRegistry() {
-        return null; // TODO REQUIRED: Return the patients currently stored.
+        Patient[] display = new Patient[size];
+        for (int i = 0; i < size; i++) {
+            display[i] = patientRegistry[i];
+        }
+        return display; // TODO REQUIRED: Return the patients currently stored.
     }
 
     public Patient getPatientByID(String patientID) {
+        
         return null; // TODO REQUIRED: Search for and return the matching patient.
     }
 
