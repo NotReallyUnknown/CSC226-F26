@@ -14,18 +14,37 @@ public class ArrayBoundedStack<T> implements StackInterface<T> {
     public boolean isEmpty()
     {
         //TODO: how do we determine if the stack is empty? Implement this method
-        return false;
+        T[] empty = new T[maxSize];
+        for (int i = 0; i < maxSize; i++) {
+            empty[i] = elements[i];
+            if (empty[i] == null) {
+                return "Error, Stack Empty!";
+        }
+            else {
+                return false;
+            }
+        }
     }
 
     public boolean isFull()
     {
         //TODO: How do we determine if the stack is full? Implement this method
-        return false;
+        T[] full = new T[maxSize];
+        for (int i = 0; i < maxSize; i++) {
+            full[i] = elements[i];
+            if (full[i] != null) {
+                return "Stack Full!";
+                    }
+            else {
+                return false;
+            }
+        }
     }
     
     public void push(T element)
     {
        // TODO: How do we add an element to the stack? Implement this method
+        
     }
     
     public void pop()
